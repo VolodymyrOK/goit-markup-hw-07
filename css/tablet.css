@@ -1,0 +1,238 @@
+/* ========= HEADER ======== */
+.mobile-menu-btn {
+    display: none;
+}
+
+.header-line {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-header-list {
+    display: flex;
+    margin-left: 120px;
+}
+
+.nav-header-item {
+    position: relative;
+}
+
+.nav-header-item:not(:last-child) {
+    margin-right: 40px;
+}
+
+.nav-header-link {
+    position: relative;
+    display: block;
+    padding-top: 24px;
+    padding-bottom: 24px;
+
+    color: var(--color-title);
+
+    font-weight: 500;
+    letter-spacing: 0.02em;
+    line-height: calc(24/16);
+
+    transition-property: color;
+    transition-duration: var(--time-transition);
+    transition-timing-function: var(--time-function);
+}
+
+.nav-header-link::after {
+    position: absolute;
+
+    content: '';
+    width: 100%;
+    height: 4px;
+    left: 0;
+    bottom: -1px;
+    border-radius: 2px;
+
+    background-color: var(--pressed-state);
+    transform: scaleX(0);
+    transition: transform var(--time-transition) var(--time-function);
+}
+
+.nav-header-link:is(:hover, :focus) {
+    color: var(--pressed-state);
+}
+
+.current {
+    color: var(--pressed-state);
+}
+
+.current::after {
+    transform: scaleX(1);
+}
+
+.nav-header-link:hover::after,
+.nav-header-link:focus::after {
+    transform: scaleX(1);
+}
+
+.header-address-list {
+    display: block;
+}
+
+.header-address-item+.header-address-item {
+    margin-top: 12px;
+}
+
+.header-address-link {
+    display: block;
+
+    color: var(--body-text);
+
+    font-size: 12px;
+    line-height: calc(14/12);
+    letter-spacing: 0.04em;
+
+    transition-property: color;
+    transition-duration: var(--time-transition);
+    transition-timing-function: var(--time-function);
+}
+
+.header-address-link:is(:hover, :focus) {
+    color: var(--pressed-state);
+}
+
+/* ======= /HEADER ======= */
+
+/* ======== HERO ========= */
+.hero {
+    max-width: 1200px;
+}
+
+.hero-title {
+    max-width: 496px;
+
+    font-size: 56px;
+    line-height: calc(60/56);
+}
+
+.hero-button {
+    margin-top: 36px;
+}
+
+/* ======== /HERO ========== */
+
+/* ======= FEATURES ======= */
+.features-list {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 72px 24px;
+}
+
+.features-item {
+    flex-basis: calc((100% - 24px) / 2);
+}
+
+.features-item+.features-item {
+    margin-top: 0px;
+}
+
+.features-list-title {
+    text-align: left;
+}
+
+/* ====== /FEATURES ======== */
+
+/* ======= OUR TEAM ========= */
+.team-list {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 72px auto 0;
+    gap: 64px 24px;
+    max-width: 552px;
+}
+
+.team-item {
+    flex-basis: calc((100% - 24px) / 2);
+}
+
+.team-item+.team-item {
+    margin-top: 0px;
+}
+
+/* ======= /OUR TEAM ======== */
+
+/* ======= CUSTOMERS ======== */
+.customers-list {
+    gap: 72px 24px;
+    max-width: 552px;
+}
+
+.customers-item {
+    width: 168px;
+    flex-basis: calc((100% - 2 * 24px) / 3);
+}
+
+/* ======= /CUSTOMERS ======== */
+
+/* ======== FOOTER ========== */
+.footer-info-wrap {
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+    margin-bottom: 72px;
+}
+
+.footer-social {
+    margin: 0;
+}
+
+.footer-info {
+    max-width: 264px;
+    margin: 0;
+}
+
+.footer-text,
+.footer-social-list {
+    margin-bottom: 0;
+}
+
+.logo-footer,
+.footer-social-title,
+.footer-subscribe-title {
+    text-align: left;
+}
+
+.footer-subscribe-form {
+    display: flex;
+    gap: 24px;
+    max-width: 453px;
+}
+
+.footer-subscribe-input {
+    width: 264px;
+    margin-bottom: 0;
+}
+
+.footer-subscribe {
+    margin: 0 auto;
+    max-width: 496px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+/* ======== MODAL WINDOW ======== */
+.modal {
+    width: 408px;
+}
+
+/* ======== /MODAL WINDOW ======== */
+
+/* ======== PORTFOLIO ========== */
+.portfolio-btn-list {
+    justify-content: center;
+    margin-bottom: 64px;
+}
+
+.portfolio-item {
+    flex-basis: calc((100% - 2 * 24px) / 2);
+}
+
+/* ======== /PORTFOLIO ========= */

@@ -1,0 +1,191 @@
+/* ===== Common styles ===== */
+.container {
+    width: 1158px;
+}
+
+.section {
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
+
+/* ===== /Common styles ===== */
+
+/* ========= HEADER ======== */
+.nav-header-list {
+    margin-left: 76px;
+}
+
+.header-address-list {
+    display: flex;
+    margin: 0;
+    align-items: center;
+}
+
+.header-address-item+.header-address-item {
+    margin-top: 0;
+    margin-left: 40px;
+}
+
+.header-address-link {
+    padding-top: 24px;
+    padding-bottom: 24px;
+
+    font-size: 16px;
+    line-height: calc(24/16);
+    letter-spacing: 0.02em;
+}
+
+/* ========= /HEADER ======== */
+
+/* ======== HERO ========= */
+@media (min-device-pixel-ratio: 2) and (min-width: 1200px),
+(min-resolution: 192dpi) and (min-width: 1200px),
+(min-resolution: 2dppx) and (min-width: 1200px) {
+    .hero {
+        background-image: var(--hero-gradient), url('../images/img-desktop/hero-img-desktop-2x.jpg');
+    }
+}
+
+.hero {
+    max-width: 1440px;
+    padding-top: 188px;
+    padding-bottom: 188px;
+
+    background-image: var(--hero-gradient), url(../images/img-desktop/hero-img-desktop-1x.jpg);
+}
+
+.hero-button {
+    margin-top: 48px;
+}
+
+/* ======== /HERO ========== */
+
+/* ======= FEATURES ======= */
+.features-item-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin-bottom: 8px;
+    height: 112px;
+    background-color: var(--color-section-bg);
+    border-radius: 4px;
+}
+
+.features-icon {
+    width: 64px;
+    height: 64px;
+}
+
+.features-item {
+    flex-basis: calc((100% - 3 * 24px) / 4);
+}
+
+.features-list-title {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: calc(24/20);
+}
+
+.features-list-text {
+    font-weight: normal;
+}
+
+/* ====== /FEATURES ======== */
+
+/* ======= WORKS ========= */
+.works {
+    display: block;
+    padding-top: 0;
+    background-color: var(--color-main-bg);
+}
+
+.works-title {
+    color: var(--color-title);
+
+    font-weight: 700;
+    font-size: 36px;
+    line-height: calc(40/36);
+    letter-spacing: 0.02em;
+    text-transform: capitalize;
+    text-align: center;
+}
+
+.works-list {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 72px;
+}
+
+.works-item+.works-item {
+    margin-left: 24px;
+}
+
+/* ======= /WORKS ========= */
+
+/* ======= OUR TEAM ========= */
+
+.team-item {
+    flex-basis: calc((100% - (3 * 24px)) / 4);
+}
+
+.team-list {
+    gap: 24px;
+    max-width: 100%;
+}
+
+/* ======= /OUR TEAM ======== */
+
+/* ======= CUSTOMERS ======== */
+.customers-list {
+    gap: 24px;
+    max-width: 100%;
+}
+
+.customers-item {
+    flex-basis: calc((100% - 5 * 24px) / 6);
+}
+
+/* ======= /CUSTOMERS ======== */
+/* ======== FOOTER ========== */
+.footer {
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.footer-line {
+    display: flex;
+}
+
+.footer-text {
+    max-width: 264px;
+}
+
+.footer-info {
+    margin: 0 120px 0 0;
+}
+
+.footer-info-wrap {
+    margin-bottom: 0;
+}
+
+.footer-social {
+    margin-right: 80px;
+}
+
+.footer-info-wrap {
+    gap: 0;
+}
+
+/* ======== /FOOTER ========== */
+
+/* ======== PORTFOLIO ========== */
+.portfolio-btn-list {
+    margin-bottom: 72px;
+}
+
+.portfolio-item {
+    flex-basis: calc((100% - 2 * 24px) / 3);
+}
+
+/* ======== /PORTFOLIO ========= */
