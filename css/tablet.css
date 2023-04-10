@@ -221,6 +221,7 @@
     max-width: 496px;
     display: flex;
     flex-direction: column;
+    margin: 0 auto;
 }
 
 /* ======== MODAL WINDOW ======== */
