@@ -231,8 +231,12 @@
     margin-bottom: 64px;
 }
 
+.portfolio-list {
+    gap: 72px 24px;
+}
+
 .portfolio-item {
-    flex-basis: calc((100% - 2 * 24px) / 2);
+    flex-basis: calc((100% - 24px) / 2);
 }
 
 /* ======== /PORTFOLIO ========= */

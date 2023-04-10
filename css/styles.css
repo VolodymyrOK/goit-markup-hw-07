@@ -604,9 +604,8 @@ body {
 
 .portfolio-list {
     display: flex;
-    justify-content: center;
     flex-wrap: wrap;
-    gap: 48px 24px;
+    row-gap: 48px;
 }
 
 .portfolio-item {
